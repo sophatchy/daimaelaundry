@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mom Laundry - ដៃម៉ែបោកអ៊ុត</title>
     
+    <!-- Website Favicon with updated logo -->
+    <link rel="icon" type="image/png" href="https://scontent.fpnh24-1.fna.fbcdn.net/v/t39.30808-6/299855215_598590711629976_2838922733417965209_n.png?stp=dst-png&cstp=mx2047x2047&ctp=s2047x2047&_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=T24mhVFXd2AQ7kNvwHxuSeA&_nc_oc=AdphEGH3OH0TecrdzGGxNC-rUByhezHAYdKfwYTZV8-wrgVjUT2V9icrJ04qMLDDvpE&_nc_zt=23&_nc_ht=scontent.fpnh24-1.fna&_nc_gid=a4qRGQ9cjKrBzyjdW0LzzQ&_nc_ss=7b2a8&oh=00_AQDTwK-TmAuol15C-QlZ1bz7e73UXZi2cjY3CKKFkEgp-Q&oe=6A52AAB6">
+    
     <!-- React & ReactDOM -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
@@ -34,8 +37,9 @@
             font-family: 'Kantumruy Pro', 'Battambang', sans-serif;
         }
         
+        /* Updated Hero Background with user's specific thumbnail URL */
         .hero-bg {
-            background-image: linear-gradient(rgba(15, 32, 67, 0.75), rgba(10, 25, 47, 0.85)), url('https://images.unsplash.com/photo-1517677208171-0bc6742058e6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-image: linear-gradient(rgba(15, 32, 67, 0.7), rgba(10, 25, 47, 0.8)), url('https://scontent.fpnh24-1.fna.fbcdn.net/v/t39.30808-6/473589144_1251206039701770_3402292654478565800_n.jpg?stp=dst-jpg_tt6&cstp=mx2048x1536&ctp=s2048x1536&_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=psbFzQQhqNwQ7kNvwEMJhUV&_nc_oc=AdoXUgHrHRJnpxxc7mNFCsI9_l6lJk7tDoBUSQi5Kc9Ru9fi3eudc-rp5t5DOyzl4Mc&_nc_zt=23&_nc_ht=scontent.fpnh24-1.fna&_nc_gid=EAcFp1nMBVzV71wb3jgxug&_nc_ss=7b2a8&oh=00_AQCXoTjSG6XAAYKY4H3hoxOcAbqLvyYcljvj-r-yv10HJw&oe=6A529F79');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -196,7 +200,6 @@
             </svg>
         );
 
-        // SVG replacements for the process section
         const ClothesHangerIcon = () => (
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-12 h-12">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v3.75m0 0a3.75 3.75 0 1 1-7.5 0H12zm0 0a3.75 3.75 0 1 0 7.5 0H12zM3 13.5h18l-1.5 6.75H4.5L3 13.5z" />
@@ -261,9 +264,10 @@
             </svg>
         );
 
+        // Interactive updated Logo component with error boundary fallback
         const LogoImage = ({ className = "w-10 h-10" }) => {
             const [imgError, setImgError] = useState(false);
-            const logoUrl = "https://scontent.fpnh5-2.fna.fbcdn.net/v/t39.30808-6/299855215_598590711629976_2838922733417965209_n.png?stp=dst-png&cstp=mx2047x2047&ctp=s2047x2047&_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeErCgdl6eMQtWNhYzOIoKcOBbFSWuPeknwFsVJa496SfGf1kukrIMrSD9EeEoMwM8js08gNoDd55vKdk2XdF8h8&_nc_ohc=JcNaxFKn4F4Q7kNvwGRGn4c&_nc_oc=Adq6e15qGyFyeWP1t_oHQiFv68iX7eM_NBn9mXaeVy46m7la4yxFJY5h778lf-NPpFg&_nc_zt=23&_nc_ht=scontent.fpnh5-2.fna&_nc_gid=lok5I8WXTs5MDnPa5zVBLA&_nc_ss=7b2a8&oh=00_Af93RzJLhq3QgtbvLw7Huxv7bzlm_Up9KyvUWgoTrLEvgQ&oe=6A418736";
+            const logoUrl = "https://scontent.fpnh24-1.fna.fbcdn.net/v/t39.30808-6/299855215_598590711629976_2838922733417965209_n.png?stp=dst-png&cstp=mx2047x2047&ctp=s2047x2047&_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=T24mhVFXd2AQ7kNvwHxuSeA&_nc_oc=AdphEGH3OH0TecrdzGGxNC-rUByhezHAYdKfwYTZV8-wrgVjUT2V9icrJ04qMLDDvpE&_nc_zt=23&_nc_ht=scontent.fpnh24-1.fna&_nc_gid=a4qRGQ9cjKrBzyjdW0LzzQ&_nc_ss=7b2a8&oh=00_AQDTwK-TmAuol15C-QlZ1bz7e73UXZi2cjY3CKKFkEgp-Q&oe=6A52AAB6";
             
             if (imgError) {
                 return <span className="mr-2.5 text-3xl transform hover:scale-110 transition">🧺</span>;
@@ -396,7 +400,7 @@
                         )}
                     </nav>
 
-                    {/* Hero Section */}
+                    {/* Hero Section featuring the premium laundry thumbnail */}
                     <header id="home" className="hero-bg h-[550px] md:h-[650px] flex items-center justify-center text-white text-center px-4">
                         {/* Animation Container */}
                         <div className="bubbles">
@@ -438,7 +442,7 @@
                         <div className="container mx-auto px-4">
                             <div className="text-center mb-16">
                                 <span className="text-blue-600 font-bold tracking-wider text-sm uppercase">ហេតុអ្វីជ្រើសរើសយើងខ្ញុំ</span>
-                                <h2 className="text-3xl font-bold text-gray-800 mt-2 mb-4">គុណតម្លៃសេវាកម្មរបស់យើងខ្ញុំ</h2>
+                                <h2 className="text-3xl font-bold text-gray-800 mt-2 mb-4">គុណតម្លៃសេវាកម្មរបស់យើងធម្មតា</h2>
                                 <div className="w-16 h-1 bg-blue-600 mx-auto rounded-full"></div>
                             </div>
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -655,7 +659,7 @@
                         </div>
                     </section>
 
-                    {/* NEW SECTION: Interactive Booking Form & Price Calculator */}
+                    {/* Interactive Booking Form & Price Calculator */}
                     <section id="booking" className="py-20 bg-white">
                         <div className="container mx-auto px-4">
                             <div className="text-center mb-12">
@@ -808,14 +812,39 @@
                         </div>
                     </section>
 
-                    {/* Partners Section */}
+                    {/* Partners Section - Prominently displaying Cocola as requested */}
                     <section id="partners" className="py-20 bg-gray-50/60 border-t border-b border-gray-100">
                         <div className="container mx-auto px-4">
                             <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">ដៃគូសហការ និងសេវាកម្មខ្នាតធំ</h2>
                             <p className="text-center text-gray-500 max-w-2xl mx-auto mb-12 text-sm leading-relaxed">
-                                យើងខ្ញុំមានសេចក្តីរីករាយក្នុងការរួមសហការជាដៃគូជាមួយបណ្តាសាជីវកម្មធំៗ ដូចជា សណ្ឋាគារ ផ្ទះសំណាក់ ខុនដូ ភោជនីយដ្ឋាន និងក្រុមហ៊ុននានា ដើម្បីផ្តល់ជូននូវសេវាកម្មបោកអ៊ុតប្រកបដោយស្តង់ដារខ្ពស់ ពេលវេលារហ័ស និងតម្លៃពិសេសបំផុត។
+                                យើងខ្ញុំមានសេចក្តីរីករាយក្នុងការរួមសហការជាដៃគូជាមួយក្រុមហ៊ុនសាជីវកម្មលំដាប់ជាតិ និងអន្តរជាតិ ដើម្បីផ្តល់ជូននូវសេវាកម្មបោកអ៊ុតស្តង់ដារខ្ពស់ ពេលវេលារហ័ស និងតម្លៃពិសេសបំផុត។
                             </p>
                             
+                            {/* Premium Partner Showcase Card */}
+                            <div className="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-sm border border-blue-100 flex flex-col md:flex-row items-center justify-between gap-8 mb-12">
+                                <div className="flex items-center gap-5">
+                                    {}
+                                    {/* Authenticated Corporate Logo for Cocola */}
+                                    <div className="w-20 h-20 bg-white rounded-2xl overflow-hidden flex items-center justify-center shadow-lg border border-gray-100 p-2 transform -rotate-3 hover:rotate-0 transition duration-300">
+                                        <img 
+                                            src="https://scontent.fpnh24-1.fna.fbcdn.net/v/t39.30808-6/355618989_635012075318049_6850163124321195170_n.png?stp=dst-png&cstp=mx541x541&ctp=s541x541&_nc_cat=1&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=yyXE2kHStt4Q7kNvwE_THpj&_nc_oc=AdqRAkMr6vClyzOxwWxkO9P7S_UdI6yMPIsqDWWz6KcDvwdkmUeSFthj6dB3sXpoeLo&_nc_zt=23&_nc_ht=scontent.fpnh24-1.fna&_nc_gid=wZYfnPSWDziE1Ab-2It73Q&_nc_ss=7b2a8&oh=00_AQBE02wD2RtZ4c27rFw2LGnDDj3MRqVY7olbttJMNKfe0w&oe=6A52B1E4" 
+                                            alt="Cocola Logo" 
+                                            className="w-full h-full object-contain rounded-xl"
+                                        />
+                                    </div>
+                                    <div>
+                                        <span className="text-xs font-bold text-red-600 uppercase tracking-widest">ដៃគូសាជីវកម្មចម្បង</span>
+                                        <h3 className="text-xl font-extrabold text-gray-800 mt-0.5">ក្រុមហ៊ុន Cocola (Cambodia)</h3>
+                                        <p className="text-xs text-gray-500 mt-1">ការថែទាំឯកសណ្ឋាន និងក្រណាត់តុបតែងប្រចាំការិយាល័យ</p>
+                                    </div>
+                                </div>
+                                <div className="text-center md:text-right">
+                                    <span className="inline-block bg-red-50 text-red-700 text-xs font-bold px-3 py-1.5 rounded-full border border-red-200">
+                                        សេវាកម្មអាទិភាព ២៤ម៉ោង
+                                    </span>
+                                </div>
+                            </div>
+
                             <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
                                 {['សណ្ឋាគារលំដាប់ផ្កាយ', 'ផ្ទះសំណាក់ប្រណីត', 'អាផាតមិន/ខុនដូ', 'ភោជនីយដ្ឋានធំៗ', 'ក្រុមហ៊ុនឯកជន', 'មន្ទីរពេទ្យ/គ្លីនិក', 'សាលារៀន/សាកលវិទ្យាល័យ', 'ក្លឹបហាត់ប្រាណទំនើប', 'ហាងកែសម្ផស្ស និងស្ប៉ា'].map((item, index) => (
                                     <span key={index} className="px-5 py-3 bg-white rounded-xl text-blue-700 text-sm font-semibold hover:bg-blue-100/30 transition shadow-sm border border-blue-50 cursor-default">
